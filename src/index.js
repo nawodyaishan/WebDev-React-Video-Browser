@@ -7,4 +7,4 @@ const App = () => {
 }
 
 // Taking HTML JSX to the DOM
-ReactDOM.render(<App/>);
+ReactDOM.render(<App/>, document.querySelector(`.container`));
