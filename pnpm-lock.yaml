@@ -13,6 +13,7 @@ specifiers:
   redux: 4.0.0
   webpack: ^1.12.9
   webpack-dev-server: ^1.14.0
+  youtube-api-search: ^0.0.5
 
 dependencies:
   babel-preset-stage-1: 6.24.1
@@ -21,6 +22,7 @@ dependencies:
   react-dom: 16.3.2_react@16.3.2
   react-redux: 5.0.7_react@16.3.2+redux@4.0.0
   redux: 4.0.0
+  youtube-api-search: 0.0.5
 
 devDependencies:
   babel-core: 6.26.3
@@ -148,6 +150,11 @@ packages:
     engines: {node: '>= 4.5.0'}
     hasBin: true
     dev: true
+
+  /axios/0.7.0:
+    resolution: {integrity: sha512-5X9Fbhy/McI95kWcapRjYA9Kg1wpYgLSniWKCdiIXvm94dcHD967lRaUfyG8EsOrF5SvSeYqdWoXbON0Sr1MPA==}
+    deprecated: Critical security vulnerability fixed in v0.21.1. For more information, see https://github.com/axios/axios/pull/3410
+    dev: false
 
   /babel-code-frame/6.26.0:
     resolution: {integrity: sha512-XqYMR2dfdGMW+hd0IUZ2PwK+fGeFkOxZJ0wY+JaQAHzt1Zx8LcvpiZD2NiGkEG8qx0CfkAOr5xt76d1e8vG90g==}
@@ -3264,3 +3271,9 @@ packages:
       decamelize: 1.2.0
       window-size: 0.1.0
     dev: true
+
+  /youtube-api-search/0.0.5:
+    resolution: {integrity: sha512-tDKpX3+AcSVty2FYOZb5VIXNKPCHutfZPeD+jM32PiVcAUoFYrNpdG8+UvHZFJkJQylJNEtGPUSml+5zE7MMPg==}
+    dependencies:
+      axios: 0.7.0
+    dev: false
