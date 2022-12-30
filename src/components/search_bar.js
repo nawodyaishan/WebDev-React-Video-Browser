@@ -3,7 +3,11 @@ import React, {Component} from 'react';
 // Class based component
 class SearchBar extends Component {
     render() {
-        return <input type="text"/>
+        return <input onChange={event => console.log(event.target.value)}/>;
+    }
+
+    onInputChange(event) {
+
     }
 }
 
