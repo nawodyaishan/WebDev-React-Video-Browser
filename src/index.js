@@ -10,12 +10,13 @@ const API_KEY = 'AIzaSyAwmN7Zhq3mNwYXqiaAMMg_fCPCej74sIw';
 class App extends Component {
     constructor(props) {
         super(props);
-        this.state = {videos: []}
 
-        YTSearch({key: API_KEY, term: "Learn React"}, (videos) => {
+        this.state = {videos: []};
+
+        YTSearch({key: API_KEY, term: "Learn React in TypeScript"}, (videos) => {
             // Replacing this.setState({videos: videos})
             this.setState({videos})
-        })
+        });
     }
 
     render() {
@@ -27,4 +28,4 @@ class App extends Component {
 }
 
 // Taking HTML JSX to the DOM
-ReactDOM.render(<App/>, document.querySelector(`.container`));
+ReactDOM.render(<App/>, document.querySelector(".container"));
