@@ -3,6 +3,11 @@ import VideoListItem from './video_list_item';
 
 const VideoDetail = (video) => {
 
+    // checking video before loading
+    if (!video) {
+        return <div>Loading ....</div>
+    }
+
     const videoId = video.id.videoId;
 
     const url = "https://www.youtube.com/embed/" + videoId;
